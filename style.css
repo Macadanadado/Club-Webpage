@@ -113,7 +113,7 @@ main {
 .meet-times h2 {
     text-align: left;
     width: 100%;
-    padding: 10px 15px;
+    padding: 15px 0;
     margin-bottom: 20px;
     background-color: #7A9E9F;
 }
@@ -154,7 +154,7 @@ th, td {
 .races h2 {
     text-align: left;
     width: 100%;
-    padding: 10px 15px;
+    padding: 15px 0;
     margin-bottom: 20px;
     background-color: #7A9E9F;
 
@@ -211,5 +211,35 @@ th, td {
 .contact img {
     width: 50px;
 }
+
+/*Media Queries*/
+@media only screen and (max-width: 900px){
+    .welcome {
+        margin: 0;
+        width: 100%;
+    }
+
+    .su-background {
+        position: static;
+    }
+
+    .sign-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .races-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .race {
+        flex-direction: row;
+        width: 100%;
+    }
+} 
 
 /* border: 1px solid red; */
